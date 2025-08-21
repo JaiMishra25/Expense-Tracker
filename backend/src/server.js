@@ -3,7 +3,7 @@ import dotenv, { parse } from 'dotenv';
 import rateLimiter from './middleware/rateLimiter.js';
 import transactionsRoute from './routes/transactionsRoute.js';
 import { initDB } from './config/db.js';
-import jobs from './config/cron.js';
+import job from './config/cron.js';
 
 const app= express();
 if(process.env.NODE_ENV === 'production') {
