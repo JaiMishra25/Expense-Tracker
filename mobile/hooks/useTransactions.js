@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import { Alert } from "react-native"; 
 
-const API_URL = "https://expense-tracker-q4jr.onrender.com/api";
+const API_URL = "http://localhost:5000/api";
 
 export const useTransactions = (userId) => {
     const [transactions, setTransactions] = useState([]);
